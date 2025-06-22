@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCircle Statics</title>
+    <link rel="stylesheet" href="bottomPopup/bottom-popup.css">
+    <script src="bottomPoptp/bottom-popup.js"></script>
 </head>
 <body>
     <h1>Hello World!</h1>
+    <button id="showPopup">显示弹窗</button>
+    <script>
+        document.getElementById('showPopup').addEventListener('click', () => {
+            createPopup('<p>这是一个响应式弹窗组件</p>', {
+                title: '一个弹窗'
+            });
+        });
+  </script>
 </body>
 </html>
